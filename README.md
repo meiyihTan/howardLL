@@ -1,5 +1,4 @@
 # Attention-Guided-Low-light-Image-Enhancement-with-Scene-Text-Restoration
-This is a pytorch implementation of Learning to See in the Dark in CVPR 2018, by Chen Chen, Qifeng Chen, Jia Xu, and Vladlen Koltun.
 
 ## Requirements
 - Python 3.6
@@ -10,8 +9,9 @@ This is a pytorch implementation of Learning to See in the Dark in CVPR 2018, by
 pip install -r requirements.txt
 ```
 ## Dataset
-Please follow the steps from the original [code](https://github.com/cchen156/Learning-to-See-in-the-Dark)
-Please download RGB images from  [code](https://drive.google.com/drive/folders/1NDlZtsyvfSHuxqEn9l-mCr9BHKztpAy4?usp=sharing)
+Please follow the steps from the original [code](https://github.com/cchen156/Learning-to-See-in-the-Dark).
+
+Please download RGB images from  [code](https://drive.google.com/drive/folders/1NDlZtsyvfSHuxqEn9l-mCr9BHKztpAy4?usp=sharing).
 
 ## Testing
 Please download the pretrained models [here](https://drive.google.com/drive/folders/1DvDDEYhBNtlrsCvIRO5GI5ghkUGoRjDI?usp=sharing), and put them in the folds "checkpoint/Sony/" and "checkpoint/Fuji/" respectively.
