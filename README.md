@@ -1,4 +1,4 @@
-# Learning-to-See-in-the-Dark-Pytorch
+# Attention-Guided-Low-light-Image-Enhancement-with-Scene-Text-Restoration
 This is a pytorch implementation of Learning to See in the Dark in CVPR 2018, by Chen Chen, Qifeng Chen, Jia Xu, and Vladlen Koltun.
 
 ## Requirements
