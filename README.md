@@ -11,6 +11,7 @@ pip install -r requirements.txt
 ```
 ## Dataset
 Please follow the steps from the original [code](https://github.com/cchen156/Learning-to-See-in-the-Dark)
+Please download RGB images from  [code](https://drive.google.com/drive/folders/1NDlZtsyvfSHuxqEn9l-mCr9BHKztpAy4?usp=sharing)
 
 ## Testing
 Please download the pretrained models [here](https://drive.google.com/drive/folders/1DvDDEYhBNtlrsCvIRO5GI5ghkUGoRjDI?usp=sharing), and put them in the folds "checkpoint/Sony/" and "checkpoint/Fuji/" respectively.
