@@ -38,11 +38,37 @@ class ICDAR15Dataset(Dataset):
         if self.input_images[ind] is None:
             input_img_path = os.path.join(self.root_dir, input_img_name)
             input_img = cv2.imread(input_img_path)
+            
+#             scale_percent = 50
+
+#             #calculate the 50 percent of original dimensions
+#             width = int(input_img.shape[1] * scale_percent / 100)
+#             height = int(input_img.shape[0] * scale_percent / 100)
+
+#             # dsize
+#             dsize = (width, height)
+
+#             # resize image
+#             input_img = cv2.resize(input_img, dsize)
+                     
             input_img = cv2.cvtColor(input_img, cv2.COLOR_BGR2RGB)
             self.input_images[ind] = np.expand_dims(np.float32(input_img / 255.0), axis=0) * ratio
 
             gt_img_path = os.path.join(self.root_dir, gt_img_name)
             im = cv2.imread(gt_img_path)
+            
+#             scale_percent = 50
+
+#             #calculate the 50 percent of original dimensions
+#             width = int(im.shape[1] * scale_percent / 100)
+#             height = int(im.shape[0] * scale_percent / 100)
+
+#             # dsize
+#             dsize = (width, height)
+
+#             # resize image
+#             im = cv2.resize(im, dsize)
+            
             im = cv2.cvtColor(im, cv2.COLOR_BGR2RGB)
             self.gt_images[ind] = np.expand_dims(np.float32(im / 255.0), axis=0)
 
@@ -52,6 +78,19 @@ class ICDAR15Dataset(Dataset):
 
             edge_path = os.path.join(self.root_dir, 'IC15_004/train/edge_en/%d.png' % (ind))
             input_edge = cv2.imread(edge_path, cv2.IMREAD_GRAYSCALE)
+            
+#             scale_percent = 50
+
+#             #calculate the 50 percent of original dimensions
+#             width = int(input_edge.shape[1] * scale_percent / 100)
+#             height = int(input_edge.shape[0] * scale_percent / 100)
+
+#             # dsize
+#             dsize = (width, height)
+
+#             # resize image
+#             input_edge = cv2.resize(input_edge, dsize)
+            
             self.input_edge_images[ind] = np.expand_dims(np.expand_dims(np.float32(input_edge / 255.0), axis=2), axis=0)
 
         # crop
