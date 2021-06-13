@@ -1,5 +1,13 @@
 # Attention-Guided-Low-light-Image-Enhancement-with-Scene-Text-Restoration
 
+#4 modules:
+network model
+train
+test
+preprocess
+
+
+
 ## Requirements
 - Python 3.6
 - Pytorch 1.3
