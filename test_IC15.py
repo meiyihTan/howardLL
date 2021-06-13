@@ -11,12 +11,13 @@ from unet import UNet
 from torch.utils.data import DataLoader
 from dataset.ICDAR15 import ICDAR15TestDataset
 
-input_dir = './dataset/IC15_004/test/low/'
-gt_dir = './dataset/IC15_004/test/high/'
-test_list_file= './dataset/IC15_004/test_list.txt'
-checkpoint_dir = './IC15_004_results/result_IC15_no_ratio/'
+input_dir = '/content/drive/MyDrive/thesis data/IC15_004/test/low'#'./dataset/IC15_004/test/low/'
+gt_dir = '/content/drive/MyDrive/thesis data/IC15_004/test/high'#'./dataset/IC15_004/test/high/'
+test_list_file= '/content/drive/MyDrive/thesis data/IC15_004/test_list.txt'#'./dataset/IC15_004/test_list.txt'
+checkpoint_dir =  '/content/drive/MyDrive/local/'#'./IC15_004_results/result_IC15_no_ratio/'
 result_dir = checkpoint_dir
-ckpt = checkpoint_dir + 'model.pth'
+ckpt = checkpoint_dir + 'model.pth' #change to model1.pth if get from the drive 
+
 
 # get test IDs
 test_fns = glob.glob(gt_dir + '*.jpg')
@@ -27,7 +28,7 @@ unet = UNet()
 unet.load_state_dict(torch.load(ckpt))
 unet.to(device)
 
-test_dataset = ICDAR15TestDataset(list_file=test_list_file, root_dir='./dataset/')
+test_dataset = ICDAR15TestDataset(list_file=test_list_file, root_dir='/content/drive/MyDrive/thesis data/')
 test_dataloader = DataLoader(test_dataset, batch_size=1, shuffle=False, num_workers=0)
 iteration = 0
 
@@ -60,8 +61,11 @@ with torch.no_grad():
         gt_img = gt_img[0, :, :, :]
         in_img = in_img[0, :, :, :]
         
-        scipy.misc.toimage(output * 255, high=255, low=0, cmin=0, cmax=255).save(
+        Image.fromarray((output * 255).astype('uint8')).convert('RGB').save(
             result_dir + 'final/' + in_fn)
+            
+#         scipy.misc.toimage(output * 255, high=255, low=0, cmin=0, cmax=255).save(
+#             result_dir + 'final/' + in_fn)
 
     # print('PSNR=%.2f SSIM=%.3f' % (np.mean(psnr), np.mean(ssim)))
 
