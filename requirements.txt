@@ -2,6 +2,7 @@ torch
 torchvision
 numpy
 scipy==1.0.0
+pytorch-msssim
 scikit-image
 tqdm
 tensorboard
