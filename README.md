@@ -8,6 +8,10 @@ Can be see in [google colab](https://colab.research.google.com/drive/1srI2wA46PN
 - test
 
 
+The weight of this IC_15 model trained at 500 epoch for IC15 dataset is in [model1.pth](https://drive.google.com/drive/folders/1Fo8LSy4sOKQvkFLLFMolnTakgev6h8ky?usp=sharing).
+
+
+
 ## Requirements
 - Python 3.6
 - Pytorch 1.3
@@ -22,8 +26,6 @@ Please follow the steps from the original [code](https://github.com/cchen156/Lea
 Please download RGB images from  [here](https://drive.google.com/drive/folders/1NDlZtsyvfSHuxqEn9l-mCr9BHKztpAy4?usp=sharing).
 
 ## Testing
-
-The weight of this model trained at 500 epoch for IC15 dataset is in [model1.pth](https://drive.google.com/drive/folders/1Fo8LSy4sOKQvkFLLFMolnTakgev6h8ky?usp=sharing).
 
 
 1. To test Sony data, run
