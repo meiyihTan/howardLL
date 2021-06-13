@@ -23,7 +23,7 @@ Please download RGB images from  [here](https://drive.google.com/drive/folders/1
 
 ## Testing
 
-The weight of this model trained at 500 epoch for IC15 dataset is in weight/model.pth or model1.pth in [here](https://drive.google.com/drive/folders/1Fo8LSy4sOKQvkFLLFMolnTakgev6h8ky?usp=sharing).
+The weight of this model trained at 500 epoch for IC15 dataset is in [model1.pth](https://drive.google.com/drive/folders/1Fo8LSy4sOKQvkFLLFMolnTakgev6h8ky?usp=sharing).
 
 
 1. To test Sony data, run
