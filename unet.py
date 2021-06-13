@@ -15,6 +15,7 @@ class Double_Conv2d(nn.Module):
     def forward(self, x):
         return self.double_conv2d(x)
 
+#UNet Network module
 class UNet(nn.Module):
     def __init__(self):
         super(UNet, self).__init__()
@@ -90,6 +91,7 @@ class UNet(nn.Module):
     #         if isinstance(m, nn.ConvTranspose2d):
     #             m.weight.data.normal_(0.0, 0.02)
 
+    
 class AddSelfUNet(nn.Module):
     def __init__(self):
         super(AddSelfUNet, self).__init__()
