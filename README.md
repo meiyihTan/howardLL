@@ -1,10 +1,11 @@
 # Attention-Guided-Low-light-Image-Enhancement-with-Scene-Text-Restoration
 
 ## 4 modules:
--preprocess
--network model
--train
---test
+
+- preprocess
+- network model
+- train
+- test
 
 
 ## Requirements
