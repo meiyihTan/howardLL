@@ -14,7 +14,9 @@ Please follow the steps from the original [code](https://github.com/cchen156/Lea
 Please download RGB images from  [here](https://drive.google.com/drive/folders/1NDlZtsyvfSHuxqEn9l-mCr9BHKztpAy4?usp=sharing).
 
 ## Testing
-Please download the pretrained models [here](https://drive.google.com/drive/folders/1DvDDEYhBNtlrsCvIRO5GI5ghkUGoRjDI?usp=sharing), and put them in the folds "checkpoint/Sony/" and "checkpoint/Fuji/" respectively.
+Please download the pretrained models [here(this is SID's weight)](https://drive.google.com/drive/folders/1DvDDEYhBNtlrsCvIRO5GI5ghkUGoRjDI?usp=sharing), and put them in the folds "checkpoint/Sony/" and "checkpoint/Fuji/" respectively.#not usable in this work
+
+The weight of this model trained at 500 epoch for IC15 dataset is in weight/model.pth or [here](https://drive.google.com/drive/folders/1Fo8LSy4sOKQvkFLLFMolnTakgev6h8ky?usp=sharing)
 
 
 1. To test Sony data, run
